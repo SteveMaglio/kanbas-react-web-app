@@ -18,7 +18,7 @@
 
               <li><a href="../profile/index.html">Account</a></li>
               <li><a href="#">Dashboard</a></li>
-              <li><a href="home.html">Courses</a></li>
+              <li><a href="../home.html">Courses</a></li>
               <li><a href="#">Calendar</a></li>
               <li><a href="#">Inbox</a></li>
               <li><a href="#">History</a></li>
@@ -33,9 +33,9 @@
               <li><a href="#">Modules</a></li>
               <li><a href="#">Piazza</a></li>
               <li><a href="#">Zoom Meetings</a></li>
-              <li><a href="assignments/index.html">Assignments</a></li>
+              <li><a href="index.html">Assignments</a></li>
               <li><a href="#">Quizzes</a></li>
-              <li><a href="grades.html">Grades</a></li>
+              <li><a href="../grades.html">Grades</a></li>
               <li><a href="#">People</a></li>
               <li><a href="#">Panopto Video</a></li>
               <li><a href="#">Account</a></li>
@@ -52,155 +52,171 @@
           </td>
           <td valign="top">
 
-  <hr>
-  <h3>Assignment Name</h3>
+            <select id="select-one-genre">
+              <option value="COMEDY">Comedy</option>
+              <option value="DRAMA">Drama</option>
+              <option selected value="SCIFI">
+                Speed Grader</option>
+              <option value="FANTASY">Fantasy</option>
+            </select>
 
-  <!-- <form action="/Kanbas/Courses/Home"> -->
-    <input value="A1 - ENV + HTML" />
+            <hr>
 
-    <br />
+            <br>
+            <h3>Assignment Name</h3>
 
-    <br />
-    <textarea cols="22" rows="2">This is the assignment description
+            <!-- <form action="/Kanbas/Courses/Home"> -->
+            <input value="A1 - ENV + HTML" />
+
+            <br />
+
+            <br />
+            <textarea cols="22" rows="2">This is the assignment description
 </textarea>
 
-    <p></p>
-    <label for="points">Points</label>
-    <br />
-    <input id="points" max="100" min="50" step="5" type="number" value="100" />
-    <br />
-    <br />
+            <p></p>
+            <label for="points">Points</label>
+            <br />
+            <input id="points" max="100" min="50" step="5" type="number" value="100" />
+            <br />
+            <br />
 
-    <!-- <h3>Due Dates</h3>
+            <!-- <h3>Due Dates</h3>
     <input type="date" value="2023-09-21" min="2023-09-07" max="2023-09-28" />
 <br>  -->
 
-    <label for="select-one-genre">
-      Assignment Group
-    </label><br />
-    <select id="select-one-genre">
-      <option selected value="SCIFI">
-        ASSIGNMENTS</option>
-      <option value="COMEDY">Comedy</option>
-      <option value="DRAMA">Drama</option>
-      <option value="FANTASY">Fantasy</option>
-    </select>
-    <br>
-    <br>
+            <label for="select-one-genre">
+              Assignment Group
+            </label><br />
+            <select id="select-one-genre">
+              <option selected value="SCIFI">
+                ASSIGNMENTS</option>
+              <option value="COMEDY">Comedy</option>
+              <option value="DRAMA">Drama</option>
+              <option value="FANTASY">Fantasy</option>
+            </select>
+            <br>
+            <br>
 
-    <label for="select-one-genre">
-      Display Grade as
-    </label><br />
-    <select id="select-one-genre">
-      <option selected value="SCIFI">
-        PERCENT</option>
-      <option value="COMEDY">Comedy</option>
-      <option value="DRAMA">Drama</option>
-      <option value="FANTASY">Fantasy</option>
-    </select>
-
-
-    <br>
-    <br>
-
-    <label for="select-one-genre">
-      Submission Type
-    </label><br />
-    <select id="select-one-genre">
-      <option selected value="SCIFI">
-        Online</option>
-      <option value="COMEDY">Comedy</option>
-      <option value="DRAMA">Drama</option>
-      <option value="FANTASY">Fantasy</option>
-    </select>
-
-    <br>
-    <br>
-
-    <label>Online Entry Options</label>
-    <br />
-    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-    <label for="chkbox-comedy">Text Entry</label> <br />
-    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-    <label for="chkbox-comedy">Website URL</label> <br />
-    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-    <label for="chkbox-comedy">Media Recordings</label> <br />
-    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-    <label for="chkbox-comedy">Student Annotation</label> <br />
-    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-    <label for="chkbox-comedy">File Uploads</label> <br />
-
-    <br>
-
-    <label for="select-one-genre">
-      Submission Attempts
-    </label><br />
-    <select id="select-one-genre">
-      <option selected value="SCIFI">
-        Unlimited</option>
-      <option value="COMEDY">Comedy</option>
-      <option value="DRAMA">Drama</option>
-      <option value="FANTASY">Fantasy</option>
-    </select>
-
-    <br>
-    <br>
-
-    <label for="select-one-genre">
-      Plagiarism Review
-    </label><br />
-    <select id="select-one-genre">
-      <option selected value="SCIFI">
-        None</option>
-      <option value="COMEDY">Comedy</option>
-      <option value="DRAMA">Drama</option>
-      <option value="FANTASY">Fantasy</option>
-    </select>
-
-    <br>
-    <br>
-
-    <label>Group Assignment</label>
-    <br />
-    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-    <label for="chkbox-comedy">This is a group assignment</label> <br />
-
-    <br>
-    <label>Peer Reviews</label>
-    <br />
-    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-    <label for="chkbox-comedy">Require Peer Reviews</label> <br />
-
-    <br>
-    <label for="text-fields-dob">
-      Due
-    </label>
-    <br>
-    <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
-
-    <br>
-    <label for="text-fields-dob">
-      Available from
-    </label>
-    <br>
-    <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
-
-    <br>
-    <label for="text-fields-dob">
-      Until
-    </label>
-    <br>
-    <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
-    <br>
-    <a href="index.html">
-      <button>Cancel</button>
-    </a>
+            <label for="select-one-genre">
+              Display Grade as
+            </label><br />
+            <select id="select-one-genre">
+              <option selected value="SCIFI">
+                PERCENT</option>
+              <option value="COMEDY">Comedy</option>
+              <option value="DRAMA">Drama</option>
+              <option value="FANTASY">Fantasy</option>
+            </select>
 
 
-    <button type="button">Save</button>
-    <!-- <button>Save</button> -->
-  </form>
-            
+            <br>
+            <br>
+
+            <label for="select-one-genre">
+              Submission Type
+            </label><br />
+            <select id="select-one-genre">
+              <option selected value="SCIFI">
+                Online</option>
+              <option value="COMEDY">Comedy</option>
+              <option value="DRAMA">Drama</option>
+              <option value="FANTASY">Fantasy</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label>Online Entry Options</label>
+            <br />
+            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+            <label for="chkbox-comedy">Text Entry</label> <br />
+            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+            <label for="chkbox-comedy">Website URL</label> <br />
+            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+            <label for="chkbox-comedy">Media Recordings</label> <br />
+            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+            <label for="chkbox-comedy">Student Annotation</label> <br />
+            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+            <label for="chkbox-comedy">File Uploads</label> <br />
+
+            <br>
+
+            <label for="select-one-genre">
+              Submission Attempts
+            </label><br />
+            <select id="select-one-genre">
+              <option selected value="SCIFI">
+                Unlimited</option>
+              <option value="COMEDY">Comedy</option>
+              <option value="DRAMA">Drama</option>
+              <option value="FANTASY">Fantasy</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label for="select-one-genre">
+              Plagiarism Review
+            </label><br />
+            <select id="select-one-genre">
+              <option selected value="SCIFI">
+                None</option>
+              <option value="COMEDY">Comedy</option>
+              <option value="DRAMA">Drama</option>
+              <option value="FANTASY">Fantasy</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label>Group Assignment</label>
+            <br />
+            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+            <label for="chkbox-comedy">This is a group assignment</label> <br />
+
+            <br>
+            <label>Peer Reviews</label>
+            <br />
+            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+            <label for="chkbox-comedy">Require Peer Reviews</label> <br />
+
+
+            <p></p>
+            <label for="Assign to">Assign To</label>
+            <br />
+            <input value="Everyone" />
+            <br />
+
+            <br>
+            <label for="text-fields-dob">
+              Due
+            </label>
+            <br>
+            <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
+
+            <br>
+            <label for="text-fields-dob">
+              Available from
+            </label>
+            <br>
+            <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
+
+            <br>
+            <label for="text-fields-dob">
+              Until
+            </label>
+            <br>
+            <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
+            <br>
+            <button onclick="window.location.href='index.html'" type="button"> Cancel</button>
+            </p>
+
+
+            <button onclick="window.location.href='index.html'" type="button"> Save</button>
+            <!-- <button>Save</button> -->
+            </form>
+
           </td>
 
         </tr>
