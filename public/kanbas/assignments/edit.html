@@ -1,44 +1,216 @@
-<h3>Assignment Name</h3>
-<form action="/Kanbas/Courses/Home">
-  <input value="A1 - ENV + HTML" />
+<body>
 
-  <br />
-  <textarea cols="50" rows="10">
-    This is the description of the assignment
-</textarea
-  >
-  <br />
-  <label for="points">Points</label>
-  <br />
-  <input id="points" max="100" min="50" step="5" type="number" value="100" />
-  <br />
-  Online Entry Options
-  <br />
-  <input id="text-entry" type="checkbox" />
-  <label for="text-entry">Text Entry</label>
-  <br />
-  <label> <input type="checkbox" /> Website URL </label>
-  <br />
-  <input type="checkbox" checked /> Media Recording<br />
-  <input type="checkbox" /> Annotation<br />
-  <input type="checkbox" /> Updloads
+  <body>
+    <h2></h2>
+    <table width="100%">
+      <!-- <thead>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead> -->
+      <tbody>
+        <tr>
+          <td valign="top">
+            <ul>
 
-  <br />
-  <br />
-  <h3>Favorite Genre</h3>
-  <input type="radio" name="genre" value="rock" /> Rock
-  <input type="radio" name="genre" value="pop" /> Pop
-  <input type="radio" name="genre" value="country" /> Country
-  <input type="radio" name="genre" value="hip-hop" /> Hip-Hop
+              <li><a href="../profile/index.html">Account</a></li>
+              <li><a href="#">Dashboard</a></li>
+              <li><a href="home.html">Courses</a></li>
+              <li><a href="#">Calendar</a></li>
+              <li><a href="#">Inbox</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Studio</a></li>
+              <li><a href="#">Commons</a></li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </td>
+          <td valign="top">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Modules</a></li>
+              <li><a href="#">Piazza</a></li>
+              <li><a href="#">Zoom Meetings</a></li>
+              <li><a href="assignments/index.html">Assignments</a></li>
+              <li><a href="#">Quizzes</a></li>
+              <li><a href="grades.html">Grades</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Panopto Video</a></li>
+              <li><a href="#">Account</a></li>
+              <li><a href="#">Discussions</a></li>
+              <li><a href="#">Announcements</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Files</a></li>
+              <li><a href="#">Rubrics</a></li>
+              <li><a href="#">Outcomes</a></li>
+              <li><a href="#">Collaborations</a></li>
+              <li><a href="#">Syllabus</a></li>
+              <li><a href="#">Settings</a></li>
+            </ul>
+          </td>
+          <td valign="top">
 
-  <h3>Favorite Movie Genre</h3>
-  <input type="radio" name="moviegenre" value="action" /> Action
-  <input type="radio" name="moviegenre" value="comedy" /> Comedy
-  <input type="radio" name="moviegenre" value="drama" /> Drama
-  <input type="radio" name="moviegenre" value="horror" /> Horror
+  <hr>
+  <h3>Assignment Name</h3>
 
-  <h3>Due Dates</h3>
-  <input type="date" value="2023-09-21" min="2023-09-07" max="2023-09-28" />
+  <!-- <form action="/Kanbas/Courses/Home"> -->
+    <input value="A1 - ENV + HTML" />
 
-  <button>Save</button>
-</form>
+    <br />
+
+    <br />
+    <textarea cols="22" rows="2">This is the assignment description
+</textarea>
+
+    <p></p>
+    <label for="points">Points</label>
+    <br />
+    <input id="points" max="100" min="50" step="5" type="number" value="100" />
+    <br />
+    <br />
+
+    <!-- <h3>Due Dates</h3>
+    <input type="date" value="2023-09-21" min="2023-09-07" max="2023-09-28" />
+<br>  -->
+
+    <label for="select-one-genre">
+      Assignment Group
+    </label><br />
+    <select id="select-one-genre">
+      <option selected value="SCIFI">
+        ASSIGNMENTS</option>
+      <option value="COMEDY">Comedy</option>
+      <option value="DRAMA">Drama</option>
+      <option value="FANTASY">Fantasy</option>
+    </select>
+    <br>
+    <br>
+
+    <label for="select-one-genre">
+      Display Grade as
+    </label><br />
+    <select id="select-one-genre">
+      <option selected value="SCIFI">
+        PERCENT</option>
+      <option value="COMEDY">Comedy</option>
+      <option value="DRAMA">Drama</option>
+      <option value="FANTASY">Fantasy</option>
+    </select>
+
+
+    <br>
+    <br>
+
+    <label for="select-one-genre">
+      Submission Type
+    </label><br />
+    <select id="select-one-genre">
+      <option selected value="SCIFI">
+        Online</option>
+      <option value="COMEDY">Comedy</option>
+      <option value="DRAMA">Drama</option>
+      <option value="FANTASY">Fantasy</option>
+    </select>
+
+    <br>
+    <br>
+
+    <label>Online Entry Options</label>
+    <br />
+    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+    <label for="chkbox-comedy">Text Entry</label> <br />
+    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+    <label for="chkbox-comedy">Website URL</label> <br />
+    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+    <label for="chkbox-comedy">Media Recordings</label> <br />
+    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+    <label for="chkbox-comedy">Student Annotation</label> <br />
+    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+    <label for="chkbox-comedy">File Uploads</label> <br />
+
+    <br>
+
+    <label for="select-one-genre">
+      Submission Attempts
+    </label><br />
+    <select id="select-one-genre">
+      <option selected value="SCIFI">
+        Unlimited</option>
+      <option value="COMEDY">Comedy</option>
+      <option value="DRAMA">Drama</option>
+      <option value="FANTASY">Fantasy</option>
+    </select>
+
+    <br>
+    <br>
+
+    <label for="select-one-genre">
+      Plagiarism Review
+    </label><br />
+    <select id="select-one-genre">
+      <option selected value="SCIFI">
+        None</option>
+      <option value="COMEDY">Comedy</option>
+      <option value="DRAMA">Drama</option>
+      <option value="FANTASY">Fantasy</option>
+    </select>
+
+    <br>
+    <br>
+
+    <label>Group Assignment</label>
+    <br />
+    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+    <label for="chkbox-comedy">This is a group assignment</label> <br />
+
+    <br>
+    <label>Peer Reviews</label>
+    <br />
+    <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+    <label for="chkbox-comedy">Require Peer Reviews</label> <br />
+
+    <br>
+    <label for="text-fields-dob">
+      Due
+    </label>
+    <br>
+    <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
+
+    <br>
+    <label for="text-fields-dob">
+      Available from
+    </label>
+    <br>
+    <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
+
+    <br>
+    <label for="text-fields-dob">
+      Until
+    </label>
+    <br>
+    <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
+    <br>
+    <a href="index.html">
+      <button>Cancel</button>
+    </a>
+
+
+    <button type="button">Save</button>
+    <!-- <button>Save</button> -->
+  </form>
+            
+          </td>
+
+        </tr>
+      </tbody>
+      <!-- <tfoot>
+            <tr>
+                <td colspan="3">Average</td>
+                <td>90</td>
+            </tr>
+        </tfoot> -->
+    </table>
+  </body>
+</body>
