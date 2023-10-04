@@ -1,232 +1,235 @@
+<html>
+
+<head>
+    <link href="/public/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/kanbas/home-style.css" />
+    <link href="/public/vendors/fontawesome/css/all.css" rel="stylesheet" />
+</head>
+
 <body>
-
-  <body>
-    <h2></h2>
-    <table width="100%">
-      <!-- <thead>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead> -->
-      <tbody>
-        <tr>
-          <td valign="top">
-            <ul>
-
-              <li><a href="../profile/index.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="../home.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black wd-flex-grow-1">
+            <ul class="wd-kanbas-navigation">
+                <li>
+                    <img src="/public/images/nulogo.png" height="60px" />
+                </li>
+                <li><a href="/public/kanbas/profile/index.html"> <i class="fa fa-user-circle account user"
+                            aria-hidden="true" style="font-size: 2.5em;"></i> <br>
+                        Account</a></li>
+                <li><a href="/public/kanbas/dashboard/index.html"><i class="fa fa-tachometer-alt" aria-hidden="true"
+                            style="font-size: 2.5em;"></i><br>
+                        Dashboard</a></li>
+                <li class="wd-active"><a href="/public/kanbas/home.html"><i class="fa fa-book" aria-hidden="true"
+                            style="font-size: 2.5em;"></i><br>
+                        Courses</a></li>
+                <li><a href="#"><i class="fa fa-calendar" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Calendar</a></li>
+                <li><a href="#"><i class="fa fa-inbox" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Inbox</a></li>
+                <li><a href="#"><i class="fas fa-clock" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        History</a></li>
+                <li><a href="#"><i class="fa fa-photo-video" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Studio</a></li>
+                <li><a href="#"><i class="fa fa-sign-out-alt" ara-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Commons</a></li>
+                <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Help</a></li>
             </ul>
-          </td>
-          <td valign="top">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Modules</a></li>
-              <li><a href="#">Piazza</a></li>
-              <li><a href="#">Zoom Meetings</a></li>
-              <li><a href="index.html">Assignments</a></li>
-              <li><a href="#">Quizzes</a></li>
-              <li><a href="../grades.html">Grades</a></li>
-              <li><a href="#">People</a></li>
-              <li><a href="#">Panopto Video</a></li>
-              <li><a href="#">Account</a></li>
-              <li><a href="#">Discussions</a></li>
-              <li><a href="#">Announcements</a></li>
-              <li><a href="#">Pages</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Rubrics</a></li>
-              <li><a href="#">Outcomes</a></li>
-              <li><a href="#">Collaborations</a></li>
-              <li><a href="#">Syllabus</a></li>
-              <li><a href="#">Settings</a></li>
-            </ul>
-          </td>
-          <td valign="top">
-
+        </div>
+        <div>
+            <ul class="wd-course-navigation wd-flex-grow-1">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb wd-course-navigation">
+                        <li class="breadcrumb-item text-wrap"><a href="/public/kanbas/home.html">CS4550.12631.202410</a>
+                        </li>
+                        <li class="breadcrumb-item text-wrap"><a href="/public/kanbas/home.html">Assignments</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">A1 - ENV + HTML</li>
+                    </ol>
+                    <ul class="wd-course-navigation wd-flex-grow-1">
+                        <li><a href="/public/kanbas/home.html">Home</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="#">Modules</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li class="wd-active"><a href="/public/kanbas/assignments/index.html">Assignments</a></li>
+                        <li><a href="/public/kanbas/grades.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Microsoft Teams Meeting</a></li>
+                        <li><a href="#">FACT Reporting and Photo Roster</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                    </ul>
+        </div>
+        <div class="wd-bg-color-white wd-flex-grow-1 wd-course-navigation">
+        
             <select id="select-one-genre">
-              <option value="COMEDY">Comedy</option>
-              <option value="DRAMA">Drama</option>
-              <option selected value="SCIFI">
-                Speed Grader</option>
-              <option value="FANTASY">Fantasy</option>
-            </select>
+                <option value="COMEDY">Comedy</option>
+                <option value="DRAMA">Drama</option>
+                <option selected value="SCIFI">
+                  Speed Grader</option>
+                <option value="FANTASY">Fantasy</option>
+              </select>
+  
+              <hr>
+  
+              <br>
+              <h3>Assignment Name</h3>
+  
+              <!-- <form action="/Kanbas/Courses/Home"> -->
+              <input class="form-control" value="A1 - ENV + HTML" />
+  
+              <br />
+  
+              <br />
+              <textarea class="form-control"cols="22" rows="2">This is the assignment description </textarea>
+  
+              <p></p>
+              <label for="points">Points</label>
+              <input class="form-control-sm" id="points" max="100" min="50" step="5" type="number" value="100" />
+              <br />
+              <br />
+  
+  
+              <label for="select-one-genre">
+                Assignment Group
+              </label>
+              <select class="form-control-sm" id="select-one-genre">
+                <option selected value="SCIFI">
+                  ASSIGNMENTS</option>
+                <option value="COMEDY">Comedy</option>
+                <option value="DRAMA">Drama</option>
+                <option value="FANTASY">Fantasy</option>
+              </select>
+              <br>
+              <br>
+  
+              <label for="select-one-genre">
+                Display Grade as
+              </label><br />
+              <select class="form-control-sm" id="select-one-genre">
+                <option selected value="SCIFI">
+                  PERCENT</option>
+                <option value="COMEDY">Comedy</option>
+                <option value="DRAMA">Drama</option>
+                <option value="FANTASY">Fantasy</option>
+              </select>
+  
+  
+              <br>
+              <br>
+  
+              <label for="select-one-genre">
+                Submission Type
+              </label><br />
+              <select class="form-control-sm" id="select-one-genre">
+                <option selected value="SCIFI">
+                  Online</option>
+                <option value="COMEDY">Comedy</option>
+                <option value="DRAMA">Drama</option>
+                <option value="FANTASY">Fantasy</option>
+              </select>
+  
+              <br>
+              <br>
+  
+              <label>Online Entry Options</label>
+              <br />
+              <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+              <label for="chkbox-comedy">Text Entry</label> <br />
+              <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+              <label for="chkbox-comedy">Website URL</label> <br />
+              <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+              <label for="chkbox-comedy">Media Recordings</label> <br />
+              <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+              <label for="chkbox-comedy">Student Annotation</label> <br />
+              <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+              <label for="chkbox-comedy">File Uploads</label> <br />
+  
+              <br>
+  
+              <label for="select-one-genre">
+                Submission Attempts
+              </label><br />
+              <select class="form-control-sm" id="select-one-genre">
+                <option selected value="SCIFI">
+                  Unlimited</option>
+                <option value="COMEDY">Comedy</option>
+                <option value="DRAMA">Drama</option>
+                <option value="FANTASY">Fantasy</option>
+              </select>
+  
+              <br>
+              <br>
+  
+              <label for="select-one-genre">
+                Plagiarism Review
+              </label><br />
+              <select class="form-control-sm" id="select-one-genre">
+                <option selected value="SCIFI">
+                  None</option>
+                <option value="COMEDY">Comedy</option>
+                <option value="DRAMA">Drama</option>
+                <option value="FANTASY">Fantasy</option>
+              </select>
+  
+              <br>
+              <br>
+  
+              <label>Group Assignment</label>
+              <br />
+              <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+              <label for="chkbox-comedy">This is a group assignment</label> <br />
+  
+              <br>
+              <label>Peer Reviews</label>
+              <br />
+              <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
+              <label for="chkbox-comedy">Require Peer Reviews</label> <br />
+  
+  
+              <p></p>
+              <label for="Assign to">Assign To</label>
+              <br />
+              <input value="Everyone" />
+              <br />
+  
+              <br>
+              <label for="text-fields-dob">
+                Due
+              </label>
+              <br>
+              <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
+  
+              <br>
+              <label for="text-fields-dob">
+                Available from
+              </label>
+              <br>
+              <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
+  
+              <br>
+              <label for="text-fields-dob">
+                Until
+              </label>
+              <br>
+              <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
+              <br>
+              <button onclick="window.location.href='index.html'"  id="btnFA" class="btn btn-light" style="float: right;" type="button">Cancel</button>
+              <button onclick="window.location.href='index.html'"  id="btnFA" class="btn btn-light" style="float: right;" type="button">Save</button>
+              <!-- <button>Save</button> -->
+              </form>
+  
+        </div>
+    </div>
+    <br><br>
 
-            <hr>
-
-            <br>
-            <h3>Assignment Name</h3>
-
-            <!-- <form action="/Kanbas/Courses/Home"> -->
-            <input value="A1 - ENV + HTML" />
-
-            <br />
-
-            <br />
-            <textarea cols="22" rows="2">This is the assignment description
-</textarea>
-
-            <p></p>
-            <label for="points">Points</label>
-            <br />
-            <input id="points" max="100" min="50" step="5" type="number" value="100" />
-            <br />
-            <br />
-
-            <!-- <h3>Due Dates</h3>
-    <input type="date" value="2023-09-21" min="2023-09-07" max="2023-09-28" />
-<br>  -->
-
-            <label for="select-one-genre">
-              Assignment Group
-            </label><br />
-            <select id="select-one-genre">
-              <option selected value="SCIFI">
-                ASSIGNMENTS</option>
-              <option value="COMEDY">Comedy</option>
-              <option value="DRAMA">Drama</option>
-              <option value="FANTASY">Fantasy</option>
-            </select>
-            <br>
-            <br>
-
-            <label for="select-one-genre">
-              Display Grade as
-            </label><br />
-            <select id="select-one-genre">
-              <option selected value="SCIFI">
-                PERCENT</option>
-              <option value="COMEDY">Comedy</option>
-              <option value="DRAMA">Drama</option>
-              <option value="FANTASY">Fantasy</option>
-            </select>
+    <div>
 
 
-            <br>
-            <br>
-
-            <label for="select-one-genre">
-              Submission Type
-            </label><br />
-            <select id="select-one-genre">
-              <option selected value="SCIFI">
-                Online</option>
-              <option value="COMEDY">Comedy</option>
-              <option value="DRAMA">Drama</option>
-              <option value="FANTASY">Fantasy</option>
-            </select>
-
-            <br>
-            <br>
-
-            <label>Online Entry Options</label>
-            <br />
-            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-            <label for="chkbox-comedy">Text Entry</label> <br />
-            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-            <label for="chkbox-comedy">Website URL</label> <br />
-            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-            <label for="chkbox-comedy">Media Recordings</label> <br />
-            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-            <label for="chkbox-comedy">Student Annotation</label> <br />
-            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-            <label for="chkbox-comedy">File Uploads</label> <br />
-
-            <br>
-
-            <label for="select-one-genre">
-              Submission Attempts
-            </label><br />
-            <select id="select-one-genre">
-              <option selected value="SCIFI">
-                Unlimited</option>
-              <option value="COMEDY">Comedy</option>
-              <option value="DRAMA">Drama</option>
-              <option value="FANTASY">Fantasy</option>
-            </select>
-
-            <br>
-            <br>
-
-            <label for="select-one-genre">
-              Plagiarism Review
-            </label><br />
-            <select id="select-one-genre">
-              <option selected value="SCIFI">
-                None</option>
-              <option value="COMEDY">Comedy</option>
-              <option value="DRAMA">Drama</option>
-              <option value="FANTASY">Fantasy</option>
-            </select>
-
-            <br>
-            <br>
-
-            <label>Group Assignment</label>
-            <br />
-            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-            <label for="chkbox-comedy">This is a group assignment</label> <br />
-
-            <br>
-            <label>Peer Reviews</label>
-            <br />
-            <input type="checkbox" value="COMEDY" name="check-genre" id="chkbox-comedy" />
-            <label for="chkbox-comedy">Require Peer Reviews</label> <br />
-
-
-            <p></p>
-            <label for="Assign to">Assign To</label>
-            <br />
-            <input value="Everyone" />
-            <br />
-
-            <br>
-            <label for="text-fields-dob">
-              Due
-            </label>
-            <br>
-            <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
-
-            <br>
-            <label for="text-fields-dob">
-              Available from
-            </label>
-            <br>
-            <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
-
-            <br>
-            <label for="text-fields-dob">
-              Until
-            </label>
-            <br>
-            <input type="date" id="text-fields-dob" value="2021-01-01" /><br />
-            <br>
-            <button onclick="window.location.href='index.html'" type="button"> Cancel</button>
-            </p>
-
-
-            <button onclick="window.location.href='index.html'" type="button"> Save</button>
-            <!-- <button>Save</button> -->
-            </form>
-
-          </td>
-
-        </tr>
-      </tbody>
-      <!-- <tfoot>
-            <tr>
-                <td colspan="3">Average</td>
-                <td>90</td>
-            </tr>
-        </tfoot> -->
-    </table>
-  </body>
+    </div>
 </body>
+
+</html>

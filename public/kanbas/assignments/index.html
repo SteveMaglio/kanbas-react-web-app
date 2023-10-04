@@ -1,155 +1,218 @@
+<html>
+
+<head>
+    <link href="/public/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/kanbas/home-style.css" />
+    <link href="/public/vendors/fontawesome/css/all.css" rel="stylesheet" />
+</head>
+
 <body>
-<h2></h2>
-<table width="100%">
-    <!-- <thead>
-        <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead> -->
-    <tbody>
-        <tr>
-            <td valign="top">
-                <ul>
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black wd-flex-grow-1">
+            <ul class="wd-kanbas-navigation">
+                <li>
+                    <img src="/public/images/nulogo.png" height="60px" />
+                </li>
+                <li><a href="/public/kanbas/profile/index.html"> <i class="fa fa-user-circle account user"
+                            aria-hidden="true" style="font-size: 2.5em;"></i> <br>
+                        Account</a></li>
+                <li><a href="/public/kanbas/dashboard/index.html"><i class="fa fa-tachometer-alt" aria-hidden="true"
+                            style="font-size: 2.5em;"></i><br>
+                        Dashboard</a></li>
+                <li class="wd-active"><a href="/public/kanbas/home.html"><i class="fa fa-book" aria-hidden="true"
+                            style="font-size: 2.5em;"></i><br>
+                        Courses</a></li>
+                <li><a href="#"><i class="fa fa-calendar" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Calendar</a></li>
+                <li><a href="#"><i class="fa fa-inbox" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Inbox</a></li>
+                <li><a href="#"><i class="fas fa-clock" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        History</a></li>
+                <li><a href="#"><i class="fa fa-photo-video" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Studio</a></li>
+                <li><a href="#"><i class="fa fa-sign-out-alt" ara-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Commons</a></li>
+                <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Help</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul class="wd-course-navigation wd-flex-grow-1">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb wd-course-navigation">
+                        <li class="breadcrumb-item text-wrap"><a href="/public/kanbas/home.html">CS4550.12631.202410</a>
+                        </li>
+                        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                    </ol>
+                    <ul class="wd-course-navigation wd-flex-grow-1">
+                        <li><a href="/public/kanbas/home.html">Home</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="#">Modules</a></li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li class="wd-active"><a href="/public/kanbas/assignments/index.html">Assignments</a></li>
+                        <li><a href="/public/kanbas/grades.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Microsoft Teams Meeting</a></li>
+                        <li><a href="#">FACT Reporting and Photo Roster</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                    </ul>
+        </div>
+        <div class="wd-bg-color-white wd-flex-grow-1 wd-course-navigation">
+            <!-- <select id="select-one-genre">
+                <option value="COMEDY">Comedy</option>
+                <option value="DRAMA">Drama</option>
+                <option selected value="SCIFI">
+                    Edit Assignment Dates</option>
+                <option value="FANTASY">Fantasy</option>
+            </select> -->
 
-                    <li><a href="../profile/index.html">Account</a></li>
-                    <li><a href="#">Dashboard</a></li>
-                    <li><a href="../home.html">Courses</a></li>
-                    <li><a href="#">Calendar</a></li>
-                    <li><a href="#">Inbox</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Studio</a></li>
-                    <li><a href="#">Commons</a></li>
-                    <li><a href="#">Help</a></li>
-                </ul>
-            </td>
-            <td valign="top">
+            <input style="float: left;"id="text-fields-username" placeholder="Search for Assignments" />
+            <button id="btnFA" class="btn btn-light" style="float: right;" type="button">Group</button>
+            <button id="btnFA" class="btn btn-light" style="float: right;" type="button">Assignment</button>
+            <br>
+            <hr>
+            <ul class="list-group" style=" list-style: none;">
+                <p></p>
+                <li class="list-group-item-secondary">
+                    <b>ASSIGNMENTS 40% of Total</b>
+                    <select id="idk">
+                        <option selected value="Edit">
+                            Edit</option>
+                        <option value="Speed Grader">Speed Grader</option>
+                        <option value="Duplicate">Duplicate</option>
+                        <option value="Delete">Delete</option>
+                        <option value="Move to">Move to...</option>
+                        <option value="Send to">Send to...</option>
+                        <option value="Copy to">Copy to...</option>
+                        <option value="Share to Commons">Share to Commons</option>
+                    </select>
+                </li>
                 <ul>
-                    <li><a href="../home.html">Home</a></li>
-                    <li><a href="#">Modules</a></li>
-                    <li><a href="#">Piazza</a></li>
-                    <li><a href="#">Zoom Meetings</a></li>
-                    <li><a href="#">Assignments</a></li>
-                    <li><a href="#">Quizzes</a></li>
-                    <li><a href="../grades.html">Grades</a></li>
-                    <li><a href="#">People</a></li>
-                    <li><a href="#">Panopto Video</a></li>
-                    <li><a href="#">Account</a></li>
-                    <li><a href="#">Discussions</a></li>
-                    <li><a href="#">Announcements</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Files</a></li>
-                    <li><a href="#">Rubrics</a></li>
-                    <li><a href="#">Outcomes</a></li>
-                    <li><a href="#">Collaborations</a></li>
-                    <li><a href="#">Syllabus</a></li>
-                    <li><a href="#">Settings</a></li>
+                    <li class="list-group-item"><a href="edit.html">A1 - ENV + HTML</a>
+                        <br>
+                        <div class="wd-assignment-info">
+                            Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022) Module | <br>
+                            Due Sep 18, 2022 at 11:59pm | 100 pts
+                        </div>
+                    </li>
+                    <li class="list-group-item"><a href="edit.html">A2 - CSS + BOOTSTRAP</a> <br>
+                        <div class="wd-assignment-info">
+                            Week 1 - HTML - Week starting on Monday September 12th (9/12/2022) Module | <br>
+                            Due Sep 25, 2022 at 11:59pm | 100 pts
+                        </div>
+                    </li>
+                    <li class="list-group-item"><a href="edit.html">A3 - JS + REACT</a> <br>
+                        <div class="wd-assignment-info">
+                            Week 2 - CSS - Week starting on Monday September 19th (9/19/2022) Module | <br>
+                            Due Oct 2, 2022 at 11:59pm | 100 pts
+                        </div>
+                    </li>
+                    <li class="list-group-item"><a href="edit.html">A4 - STATE + REDUX</a> <br>
+                        <div class="wd-assignment-info">
+                            Week 3 - Bootstrap - Week starting on Monday September 26th (9/26/2022) Module | <br>
+                            Due Oct 10, 2022 at 11:59pm | 100 pts
+                        </div>
+                    </li>
+                    <li class="list-group-item"><a href="edit.html">A5 - NODE + SESSION</a> <br>
+                        <div class="wd-assignment-info">
+                            Week 4 - JavaScript - Week starting on Monday October 3rd (10/3/2022) Module | <br>
+                            Due Oct 16, 2022 at 11:59pm | 100 pts
+                        </div>
+                    </li>
+                    <li class="list-group-item"><a href="edit.html">A6 - MONGO + MONGOOSE</a> <br>
+                        <div class="wd-assignment-info">
+                            Week 5 - React & Routing - Week starting Monday October 10th (10/10/2022) Module | <br>
+                            Due Oct 23. 2022 at 11:59pm | 100 pts
+                        </div>
+                    </li>
                 </ul>
-            </td>
-            <td valign="top">
-                <input id="text-fields-username" placeholder="Search for Assignments" />
-                <button type="button">Group</button>
-                <button type="button">Assignment</button>
-                <select id="select-one-genre">
-                    <option value="COMEDY">Comedy</option>
-                    <option value="DRAMA">Drama</option>
-                    <option selected value="SCIFI">
-                        Edit Assignment Dates</option>
-                    <option value="FANTASY">Fantasy</option>
-                </select>
+
 
                 <p></p>
-                <b>ASSIGNMENTS 40% of Total</b>
-                <select id="idk">
-                    <option selected value="Edit">
-                        Edit</option>
-                    <option value="Speed Grader">Speed Grader</option>
-                    <option value="Duplicate">Duplicate</option>
-                    <option value="Delete">Delete</option>
-                    <option value="Move to">Move to...</option>
-                    <option value="Send to">Send to...</option>
-                    <option value="Copy to">Copy to...</option>
-                    <option value="Share to Commons">Share to Commons</option>
-                </select>
+                <li class="list-group-item-secondary">
+                    <b>QUIZZES 10% of Total</b>
+                    <select id="idk">
+                        <option selected value="Edit">
+                            Edit</option>
+                        <option value="Speed Grader">Speed Grader</option>
+                        <option value="Duplicate">Duplicate</option>
+                        <option value="Delete">Delete</option>
+                        <option value="Move to">Move to...</option>
+                        <option value="Send to">Send to...</option>
+                        <option value="Copy to">Copy to...</option>
+                        <option value="Share to Commons">Share to Commons</option>
+                    </select>
+                </li>
                 <ul>
-                    <li><a href="edit.html">A1 - ENV + HTML</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-                    <li><a href="edit.html">A2 - CSS + BOOTSTRAP</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-                    <li><a href="edit.html">A3 - JS + REACT</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-                    <li><a href="edit.html">A4 - STATE + REDUX</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-                    <li><a href="edit.html">A5 - NODE + SESSION</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-                    <li><a href="edit.html">A6 - MONGO + MONGOOSE</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
+                    <li class="list-group-item"><a href="edit.html">Q1 - HTML</a> <br> <a href="#">Multiple Modules</a>
+                        | Not available yet</li>
+                    <li class="list-group-item"><a href="edit.html">Q2 - CSS</a> <br> <a href="#">Multiple Modules</a> |
+                        Not available yet</li>
+                    <li class="list-group-item"><a href="edit.html">Q3: JS, ES6</a> <br> <a href="#">Multiple
+                            Modules</a> | Not available yet
+                    </li>
+                    <li class="list-group-item"><a href="edit.html">Q4: NODE</a> <br> <a href="#">Multiple Modules</a> |
+                        Not available yet</li>
+                    <li class="list-group-item"><a href="edit.html">Q5: MONGO</a> <br> <a href="#">Multiple Modules</a>
+                        | Not available yet</li>
                 </ul>
 
                 <p></p>
-                <b>QUIZZES 10% of Total</b>
-                <select id="idk">
-                    <option selected value="Edit">
-                        Edit</option>
-                    <option value="Speed Grader">Speed Grader</option>
-                    <option value="Duplicate">Duplicate</option>
-                    <option value="Delete">Delete</option>
-                    <option value="Move to">Move to...</option>
-                    <option value="Send to">Send to...</option>
-                    <option value="Copy to">Copy to...</option>
-                    <option value="Share to Commons">Share to Commons</option>
-                </select>
+                <li class="list-group-item-secondary">
+                    <b>EXAMS 20% of Total</b>
+                    <select id="idk">
+                        <option selected value="Edit">
+                            Edit</option>
+                        <option value="Speed Grader">Speed Grader</option>
+                        <option value="Duplicate">Duplicate</option>
+                        <option value="Delete">Delete</option>
+                        <option value="Move to">Move to...</option>
+                        <option value="Send to">Send to...</option>
+                        <option value="Copy to">Copy to...</option>
+                        <option value="Share to Commons">Share to Commons</option>
+                    </select>
+                </li>
                 <ul>
-                    <li><a href="edit.html">Q1 - HTML</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-                    <li><a href="edit.html">Q2 - CSS</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-                    <li><a href="edit.html">Q3: JS, ES6</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-                    <li><a href="edit.html">Q4: NODE</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-                    <li><a href="edit.html">Q5: MONGO</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
+                    <li class="list-group-item"><a href="edit.html">Midterm</a> <br> <a href="#">Multiple Modules</a> |
+                        Not available yet</li>
+                    <li class="list-group-item"><a href="edit.html">Final</a> <br> <a href="#">Multiple Modules</a> |
+                        Not available yet</li>
                 </ul>
+
 
                 <p></p>
-                <b>EXAMS 20% of Total</b>
-                <select id="idk">
-                    <option selected value="Edit">
-                        Edit</option>
-                    <option value="Speed Grader">Speed Grader</option>
-                    <option value="Duplicate">Duplicate</option>
-                    <option value="Delete">Delete</option>
-                    <option value="Move to">Move to...</option>
-                    <option value="Send to">Send to...</option>
-                    <option value="Copy to">Copy to...</option>
-                    <option value="Share to Commons">Share to Commons</option>
-                </select>
+                <li class="list-group-item-secondary">
+                    <b>PROJECTS 30% of Total</b>
+                    <select id="idk">
+                        <option selected value="Edit">
+                            Edit</option>
+                        <option value="Speed Grader">Speed Grader</option>
+                        <option value="Duplicate">Duplicate</option>
+                        <option value="Delete">Delete</option>
+                        <option value="Move to">Move to...</option>
+                        <option value="Send to">Send to...</option>
+                        <option value="Copy to">Copy to...</option>
+                        <option value="Share to Commons">Share to Commons</option>
+                    </select>
+                </li>
+
                 <ul>
-                    <li><a href="edit.html">Midterm</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-                    <li><a href="edit.html">Final</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
+                    <li class="list-group-item"><a href="edit.html">Project</a> <br> <a href="#">Multiple Modules</a> |
+                        Not available yet</li>
                 </ul>
+            </ul>
+        </div>
+    </div>
+    <br><br>
 
-                <p></p>
-                <b>PROJECTS 30% of Total</b>
-                <select id="idk">
-                    <option selected value="Edit">
-                        Edit</option>
-                    <option value="Speed Grader">Speed Grader</option>
-                    <option value="Duplicate">Duplicate</option>
-                    <option value="Delete">Delete</option>
-                    <option value="Move to">Move to...</option>
-                    <option value="Send to">Send to...</option>
-                    <option value="Copy to">Copy to...</option>
-                    <option value="Share to Commons">Share to Commons</option>
-                </select>
-                <ul>
-                    <li><a href="edit.html">Project</a> <br> <a href="#">Multiple Modules</a> | Not available yet</li>
-                </ul>
+    <div>
 
 
-
-
-
-            </td>
-        </tr>
-    </tbody>
-    <!-- <tfoot>
-        <tr>
-            <td colspan="3">Average</td>
-            <td>90</td>
-        </tr>
-    </tfoot> -->
-</table>
+    </div>
 </body>
+
+</html>

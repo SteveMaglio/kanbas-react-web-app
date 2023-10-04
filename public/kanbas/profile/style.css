@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.wd-bg-color-blue {
+    background-color: blue;
+}
+
+.wd-bg-color-white {
+    background-color: white;
+}
+
+.wd-bg-color-black {
+    background-color: black;
+    max-width: 85px;
+}
+
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-flex-grow-1 {
+    flex-grow: 1;
+}
+
+.wd-kanbas-navigation {
+    background-color: black;
+    list-style: none;
+    padding: 0px;
+    width: 85px;
+    margin: 0px;
+    margin-left: 0px;
+}
+
+.wd-kanbas-navigation li a {
+    color: white;
+    text-decoration: none;
+    /* padding: 10px; */
+    /* display: block; */
+}
+.wd-kanbas-navigation li a i{
+    color: red;
+    text-decoration: none;
+    /* padding: 10px; */
+    /* display: block; */
+}
+
+.wd-kanbas-navigation li a i.user{
+    color: gray;
+    text-decoration: none;
+    /* padding: 10px; */
+    /* display: block; */
+}
+
+.wd-kanbas-navigation li {
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 0.6em;
+    text-align: center;
+}
+
+.wd-kanbas-navigation li.wd-active {
+    background-color: white;
+}
+
+.wd-kanbas-navigation li.wd-active a {
+    color: red;
+}
+
+.wd-course-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 15px;
+    width: 190px;
+    margin: Opx;
+    margin-left: 10px;
+    padding: 0px;
+}
+
+.wd-course-navigation li {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.wd-course-navigation li.wd-active {
+    border-left: 1px solid black;
+}
+
+.wd-course-navigation li.wd-active a {
+    color: black;
+}
+
+.wd-course-navigation a {
+    color: red;
+    text-decoration: none;
+}
+
+.wd-account-info a {
+    color: red;
+}

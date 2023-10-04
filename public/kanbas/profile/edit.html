@@ -1,111 +1,133 @@
+<html>
+
+<head>
+  <link href="/public/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet" />
+</head>
+
+
 <body>
+  <div class="wd-flex-row-container">
 
-  <body>
-    <h2></h2>
-    <table width="100%">
-      <!-- <thead>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead> -->
-      <tbody>
-        <tr>
-          <td valign="top">
-            <ul>
+    <div class="wd-bg-color-black wd-flex-grow-1">
+      <ul class="wd-kanbas-navigation">
+        <li>
+          <img src="/public/images/nulogo.png" height="60px" />
+        </li>
+        <li class="wd-active"><a href="/public/kanbas/profile/index.html"> <i class="fa fa-user-circle account user"
+              aria-hidden="true" style="font-size: 2.5em;"></i> <br>
+            Account</a></li>
+        <li><a href="/public/kanbas/dashboard/index.html"><i class="fa fa-tachometer-alt" aria-hidden="true"
+              style="font-size: 2.5em;"></i><br>
+            Dashboard</a></li>
+        <li><a href="/public/kanbas/home.html"><i class="fa fa-book" aria-hidden="true"
+              style="font-size: 2.5em;"></i><br>
+            Courses</a></li>
+        <li><a href="#"><i class="fa fa-calendar" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+            Calendar</a></li>
+        <li><a href="#"><i class="fa fa-inbox" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+            Inbox</a></li>
+        <li><a href="#"><i class="fas fa-clock" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+            History</a></li>
+        <li><a href="#"><i class="fa fa-photo-video" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+            Studio</a></li>
+        <li><a href="#"><i class="fa fa-sign-out-alt" ara-hidden="true" style="font-size: 2.5em;"></i><br>
+            Commons</a></li>
+        <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+            Help</a></li>
+      </ul>
+    </div>
+    <div style="padding-left: 20px;">
+      <ul class="wd-course-navigation wd-flex-grow-1">
+        <li><a href="#">Notifications</a></li>
+        <li class="wd-active"><a href="index.html">Profile</a></li>
+        <li><a href="#">Files</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">ePortfolio</a></li>
+        <li><a href="#">Shared Content</a></li>
+        <li><a href="#">The Hub</a></li>
+        <li><a href="#">Quickly Course Tools</a></li>
+        <li><a href="#">Global Announcements</a></li>
+      </ul>
+    </div>
+    <div class="wd-bg-color-white wd-flex-grow-1 wd-course-navigation">
+      <br>
+      <h6>Jose Annunziato's profile</h6>
+      <hr>
+      <div class="float-end pe-3">
 
-              <li><a href="../profile/index.html">Account</a></li>
-              <li><a href="#">Dashboard</a></li>
-              <li><a href="home.html">Courses</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Inbox</a></li>
-              <li><a href="#">History</a></li>
-              <li><a href="#">Studio</a></li>
-              <li><a href="#">Commons</a></li>
-              <li><a href="#">Help</a></li>
-            </ul>
-          </td>
-          <td valign="top">
-            <ul>
-              <li><a href="#">Notifications</a></li>
-              <li><a href="#">Profile</a></li>
-              <li><a href="#">Files</a></li>
-              <li><a href="#">Settings</a></li>
-              <li><a href="#">ePortfolios</a></li>
-              <li><a href="#">Shared Content</a></li>
-              <li><a href="#">The Hub</a></li>
-              <li><a href="#">Quickly Course Tools</a></li>
-              <li><a href="#">Global Announcements</a></li>
-            </ul>
-          </td>
-          <td valign="top">
+        <button id="btnFA" class="btn btn-light" onclick="window.location.href='index.html'">
+          <i class="fa fa-pencil-alt" aria-hidden="true"></i>
+          Cancel Editing
+        </button>
+      </div>
+      <br>
+      <i class="fa fa-user" aria-hidden="true" style="font-size: 8em;"></i>
+      <br>
+      <br>
+      <!-- <form action="/Kanbas/Courses/Home"> -->
+      Name:* <input class="form-control-sm form-input" value="Jose Annunziato" />
+      <br>
+      <br>
 
-
-
-            <h3>Jose Annunziato</h3>
-
-            <!-- <form action="/Kanbas/Courses/Home"> -->
-            Name:* <input value="Jose Annunziato" />
-            Pronouns:* <select id="select-one-genre">
-              <option selected value="SCIFI">
-                None</option>
-              <option value="COMEDY">Comedy</option>
-              <option value="DRAMA">Drama</option>
-              <option value="FANTASY">Fantasy</option>
-
-            </select>
-            <br>
-            <br />
-            Title: <input value="" />
-            <p></p>
-            <h3>Contact</h3>
-            <p></p>
-            No registered services, you can add some on the <a href="#">settings</a> page
-
-
-            <p></p>
-            <h3>Biography</h3>
-            <p></p>
-            <form id="textarea">
-              <label>Faculty, Software Engineer, Al, Space, and renewables enthusiast.</label><br />
-              <textarea cols="50" rows="4">Faculty, Software Engineer, Al, Space, and renewables enthusiast.</textarea>
-            </form>
-            <p></p>
-            <h3>Links</h3>
-            <ul>
-              <li><a href="https://www.youtube.com/@WebDevTV">YouTube</a></li>
-            </ul>
-            <br>
-            <table>
-
-              <td>
-                <table class="center">
-                  <td>
-                    <h4>Title</h4>
-                    <input value="YouTube" />
-                  </td>
-                  <td>→</td>
-                  <td>
-                    <h4>URL</h4>
-                    <input value="https://youtube.com/user/WebDevTV" />
-                  </td>
-                  <td><a href="#">Remove</a></td>
-                </table>
-              </td>
-            </table>
-            <p></p>
-
-            <button type="button">Add another link</button>
-            <br>
-            <button type="button">Cancel</button>
-            <button type="button">Save Profile</button>
-            <br>
-            <button type="button">Edit Profile</button>
-            <button type="button">Cancel Editing</button>
+      Pronouns:* <select class="form-select-sm" id="select-one-genre">
+        <option selected value="SCIFI">
+          None</option>
+        <option value="COMEDY">Comedy</option>
+        <option value="DRAMA">Drama</option>
+        <option value="FANTASY">Fantasy</option>
+      </select>
+      <br>
+      <br />
+      Title: <input class="form-control-sm" value="" />
+      <p></p>
+      <h3>Contact</h3>
+      <p></p>
+      No registered services, you can add some on the <a href="#">settings</a> page
 
 
-    </table>
-  </body>
+      <p></p>
+      <h3>Biography</h3>
+      <p></p>
+      <form id="textarea">
+        <label>Faculty, Software Engineer, Al, Space, and renewables enthusiast.</label><br />
+        <textarea class="form-control-sm" cols="50"
+          rows="4">Faculty, Software Engineer, Al, Space, and renewables enthusiast.</textarea>
+      </form>
+      <p></p>
+      <h3>Links</h3>
+      <ul>
+        <li><a href="https://www.youtube.com/@WebDevTV">YouTube</a></li>
+      </ul>
+      <br>
+      <table>
+
+        <td>
+          <table class="center">
+            <td>
+              <h4>Title</h4>
+              <input value="YouTube" />
+            </td>
+            <td>→</td>
+            <td>
+              <h4>URL</h4>
+              <input value="https://youtube.com/user/WebDevTV" />
+            </td>
+            <td><a href="#">Remove</a></td>
+          </table>
+          <button class="btn btn-secondary">Add another link</button>
+        </td>
+      </table>
+      <p></p>
+      <br>
+      <div class="float-end pe-3">
+        <button onclick="window.location.href='index.html'" type="submit" class="btn btn-secondary">Cancel</button>
+        <button onclick="window.location.href='index.html'" type="submit" class="btn btn-danger">Save Profile</button>
+      </div>
+      <br>
+    </div>
+  </div>
 </body>
+
+</html>

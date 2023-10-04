@@ -1,141 +1,184 @@
+<html>
+
+<head>
+    <link href="/public/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="home-style.css" />
+    <link href="/public/vendors/fontawesome/css/all.css" rel="stylesheet" />
+</head>
+
 <body>
-    <h2></h2>
-    <table width="100%">
-        <!-- <thead>
-        <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
-        </tr>
-    </thead> -->
-        <tbody>
-            <tr>
-                <td valign="top">
-                    <ul>
-
-                        <li><a href="#">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="#">Modules</a></li>
-                        <li><a href="#">Piazza</a></li>
-                        <li><a href="#">Zoom Meetings</a></li>
-                        <li><a href="assignments/index.html">Assignments</a></li>
-                        <li><a href="#">Quizzes</a></li>
-                        <li><a href="#">Grades</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                        <li><a href="#">Account</a></li>
-                        <li><a href="#">Discussions</a></li>
-                        <li><a href="#">Announcements</a></li>
-                        <li><a href="#">Pages</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Rubrics</a></li>
-                        <li><a href="#">Outcomes</a></li>
-                        <li><a href="#">Collaborations</a></li>
-                        <li><a href="#">Syllabus</a></li>
-                        <li><a href="#">Settings</a></li>
-                    </ul>
-                </td>
-                <td valign="top"> <select id="select-one-genre">
-                        <option value="COMEDY">Comedy</option>
-                        <option value="DRAMA">Drama</option>
-                        <option selected value="SCIFI">
-                            Gradebook</option>
-                        <option value="FANTASY">Fantasy</option>
-                    </select>
-                    <button type="button">Import</button>
-                    <select id="select-one-genre">
-                        <option value="COMEDY">Comedy</option>
-                        <option value="DRAMA">Drama</option>
-                        <option selected value="SCIFI">
-                            Export</option>
-                        <option value="FANTASY">Fantasy</option>
-                    </select>
-                    <button type="button">Configure</button>
-
-                    <p></p>
-                    <h3>Student Names</h3>
-                    <p></p>
-                    <input id="text-fields-username" placeholder="Search Students" /><br />
-
-                    <p></p>
-                    <h3>Assignment Names</h3>
-                    <p></p>
-                    <input id="text-fields-username" placeholder="Search Assignments" /><br />
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black wd-flex-grow-1">
+            <ul class="wd-kanbas-navigation">
+                <li>
+                    <img src="/public/images/nulogo.png" height="60px" />
+                </li>
+                <li><a href="/public/kanbas/profile/index.html"> <i class="fa fa-user-circle account user"
+                            aria-hidden="true" style="font-size: 2.5em;"></i> <br>
+                        Account</a></li>
+                <li><a href="/public/kanbas/dashboard/index.html"><i class="fa fa-tachometer-alt" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Dashboard</a></li>
+                <li class="wd-active"><a href="/public/kanbas/home.html"><i class="fa fa-book" aria-hidden="true"
+                            style="font-size: 2.5em;"></i><br>
+                        Courses</a></li>
+                <li><a href="#"><i class="fa fa-calendar" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Calendar</a></li>
+                <li><a href="#"><i class="fa fa-inbox" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Inbox</a></li>
+                <li><a href="#"><i class="fas fa-clock" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        History</a></li>
+                <li><a href="#"><i class="fa fa-photo-video" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Studio</a></li>
+                <li><a href="#"><i class="fa fa-sign-out-alt" ara-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Commons</a></li>
+                <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Help</a></li>
+            </ul>
+        </div>
+        <div>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb wd-course-navigation">
+                    <li class="breadcrumb-item text-wrap"><a href="/public/kanbas/home.html">CS4550.12631.202410</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Grades</li>
+                </ol>
 
 
-                    <p>
-                    </p>
-                    <button type="button">Apply Filters</button>
-                    
-                    
-                    <p></p>
+            <ul class="wd-course-navigation wd-flex-grow-1">
+                <li><a href="/public/kanbas/home.html">Home</a></li>
+                <li><a href="#">Piazza</a></li>
+                <li><a href="#">Zoom Meetings</a></li>
+                <li><a href="#">Modules</a></li>
+                <li><a href="#">Quizzes</a></li>
+                <li><a href="/public/kanbas/assignments/index.html">Assignments</a></li>
+                <li class="wd-active"><a href="/public/kanbas/grades.html">Grades</a></li>
+                <li><a href="#">People</a></li>
+                <li><a href="#">FACT Reporting and Photo Roster</a></li>
+                <li><a href="#">Microsoft Teams Meeting</a></li>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Announcements</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Files</a></li>
+            </ul>
+        </div>
+        <div class="wd-bg-color-white wd-flex-grow-1">
+
+            <div class="float-end">
+                <button id="btnFA" class="btn btn-light">
+                    <i class="fas fa-file-import"></i>
+                    Import
+                </button>
+                <!-- <div class="dropdown"> -->
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="fas fa-file-export fa-flip-horizontal"></i>
+                    Export
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+                <!-- </div> -->
+                <button id="btnFA" class="btn btn-light">
+                    <i class="fas fa-screwdriver"></i>
+                </button>
+            </div>
+
+            <p></p>
+
+            <div class="container">
+                <div class="row justify-content-left">
+                    <div class="col-4">
+                        <div>
+                            <label for="exampleDataList" class="form-label">Student Names</label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                placeholder="Search Students">
+                            <datalist id="datalistOptions">
+                                <option value="San Francisco">
+                                <option value="New York">
+                                <option value="Seattle">
+                                <option value="Los Angeles">
+                                <option value="Chicago">
+                            </datalist>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div>
+                            <label for="exampleDataList" class="form-label">Assignment Names</label>
+                            <input class="form-control" list="datalistOptions" id="exampleDataList"
+                                placeholder="Search Assignments">
+                            <datalist id="datalistOptions">
+                                <option value="San Francisco">
+                                <option value="New York">
+                                <option value="Seattle">
+                                <option value="Los Angeles">
+                                <option value="Chicago">
+                            </datalist>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+            </p>
+            <button id="btnFA" class="btn btn-light">
+                <i class="fa fa-server"></i>
+                Apply Filters
+            </button>
 
 
-                    <table width="100%" border="1">
-                        <thead>
-                          <tr>
+            <p></p>
+
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
                             <th>Student Name</th>
                             <th>A1 - HTML</th>
                             <th>A2 - CSS</th>
                             <th>A3 - JS</th>
                             <th>A4 - PHP</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>Steve Magliocchino</td>
+                        </tr>
+                    </thead>
+                    <tbody class="wd-course-navigation">
+                        <tr>
+                            <td><a href="#">Stephen Magliocchino</a></td>
                             <td>100%</td>
-                            <td><input type="number" id="text-fields-salary-start" placeholder="100" value="90" /><br /></td>
+                            <td><input type="number" id="text-fields-salary-start" placeholder="100"
+                                    value="90" />%<br />
+                            </td>
                             <td>100%</td>
                             <td>100%</td>
-                          </tr>
-                          <tr>
-                            <td>Bad Student</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Bad Student</a></td>
                             <td>0%</td>
                             <td>1%</td>
-                            <td><input type="number" id="text-fields-salary-start" placeholder="100" value="0" /></td>
+                            <td><input type="number" id="text-fields-salary-start" placeholder="100" value="0" />%</td>
                             <td>10%</td>
-                          </tr>
-                          <tr>
-                            <td>Reed Richards</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Reed Richards</a></td>
                             <td>101%</td>
                             <td>105%</td>
                             <td><input type="number" id="text-fields-salary-start" placeholder="100" value="99" />%</td>
                             <td>100%</td>
-                          </tr>
-                          <tr>
-                            <td>Johnny Storm</td>
+                        </tr>
+                        <tr>
+                            <td><a href="#">Johnny Storm</a></td>
                             <td>70%</td>
-                            <td><input type="number" id="text-fields-salary-start" placeholder="100" value="83" /></td>
+                            <td><input type="number" id="text-fields-salary-start" placeholder="100" value="83" />%</td>
                             <td>84%</td>
                             <td>82%</td>
-                          </tr>
-                        </tbody>
-                        <tfoot></tfoot>
-                      </table>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </div>
 
-
-                </td>
-            </tr>
-        </tbody>
-        <!-- <tfoot>
-        <tr>
-            <td colspan="3">Average</td>
-            <td>90</td>
-        </tr>
-    </tfoot> -->
-    </table>
+        </div>
+    </div>
 </body>
+
+</html>

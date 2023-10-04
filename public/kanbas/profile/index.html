@@ -1,79 +1,88 @@
+<html>
+
+<head>
+    <link href="/public/vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="/public/vendors/fontawesome/css/all.css" rel="stylesheet" />
+</head>
+
 <body>
-    <h2></h2>
-    <table border="0" width="100%">
-        <!-- <thead>
-            <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead> -->
-        <tbody>
-            <tr>
-                <td valign="top">
-                    <ul>
+    <div class="wd-flex-row-container">
 
-                        <li><a href="../profile/index.html">Account</a></li>
-                        <li><a href="#">Dashboard</a></li>
-                        <li><a href="../home.html">Courses</a></li>
-                        <li><a href="#">Calendar</a></li>
-                        <li><a href="#">Inbox</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="#">Studio</a></li>
-                        <li><a href="#">Commons</a></li>
-                        <li><a href="#">Help</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                    <ul>
-                        <li><a href="#">Notifications</a></li>
-                        <li><a href="#">Profile</a></li>
-                        <li><a href="#">Files</a></li>
-                        <li><a href="#">Settings</a></li>
-                        <li><a href="#">ePortfolio</a></li>
-                        <li><a href="#">Shared Content</a></li>
-                        <li><a href="#">Panopto Video</a></li>
-                        <li><a href="#">The Hub</a></li>
-                        <li><a href="#">Quickly Course Tools</a></li>
-                        <li><a href="#">Global Announcements</a></li>
-                    </ul>
-                </td>
-                <td valign="top">
-                <td valign="top">
-                    Jose Annunziato's profile
-                    <p></p>
-                    <hr>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
+        <div class="wd-bg-color-black wd-flex-grow-1">
+            <ul class="wd-kanbas-navigation">
+                <li>
+                    <img src="/public/images/nulogo.png" height="60px" />
+                </li>
+                <li class="wd-active"><a href="/public/kanbas/profile/index.html"> <i
+                            class="fa fa-user-circle account user" aria-hidden="true" style="font-size: 2.5em;"></i>
+                        <br>
+                        Account</a></li>
+                <li><a href="/public/kanbas/dashboard/index.html"><i class="fa fa-tachometer-alt" aria-hidden="true"
+                            style="font-size: 2.5em;"></i><br>
+                        Dashboard</a></li>
+                <li><a href="/public/kanbas/home.html"><i class="fa fa-book" aria-hidden="true"
+                            style="font-size: 2.5em;"></i><br>
+                        Courses</a></li>
+                <li><a href="#"><i class="fa fa-calendar" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Calendar</a></li>
+                <li><a href="#"><i class="fa fa-inbox" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Inbox</a></li>
+                <li><a href="#"><i class="fas fa-clock" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        History</a></li>
+                <li><a href="#"><i class="fa fa-photo-video" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Studio</a></li>
+                <li><a href="#"><i class="fa fa-sign-out-alt" ara-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Commons</a></li>
+                <li><a href="#"><i class="fa fa-question-circle" aria-hidden="true" style="font-size: 2.5em;"></i><br>
+                        Help</a></li>
+            </ul>
+        </div>
+        <div style="padding-left: 20px; padding-right: 20px;">
+            <ul class="wd-course-navigation wd-flex-grow-1">
+                <li><a href="#">Notifications</a></li>
+                <li class="wd-active"><a href="#">Profile</a></li>
+                <li><a href="#">Files</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">ePortfolio</a></li>
+                <li><a href="#">Shared Content</a></li>
+                <li><a href="#">The Hub</a></li>
+                <li><a href="#">Quickly Course Tools</a></li>
+                <li><a href="#">Global Announcements</a></li>
+            </ul>
+        </div>
+        <div class="wd-bg-color-white wd-flex-grow-1">
+            Jose Annunziato's profile
+            <p></p>
+            <hr>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
 
-                    <p align="right">
-                    <button 
-                    onclick="window.location.href='edit.html'"
-                    type="button"> <img height="20" width="20" src="pencil.svg" /> Click me!</button>
-                    </p>
+            <p align="right">
+
+                <button id="btnFA" class="btn btn-light" onclick="window.location.href='edit.html'">
+                    <i class="fa fa-pencil-alt" aria-hidden="true"></i>
+                    Edit Profile
+                </button>
 
 
-                    <font size="5">Jose Annunziato</font>
-                    <p></p>
-                    <p></p>
-                    <font size="4">Contact</font>
-                    <p>No registered services, you can add some on the settings page.</p>
-                    <font size="4">Biography</font>
-                    <p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
-                    <font size="4">Links</font>
-                    <p><a href="https://www.youtube.com/@WebDevTV">YouTube</a></p>
-                </td>
-                </td>
-            </tr>
-        </tbody>
-        <!-- <tfoot>
-            <tr>
-                <td colspan="3">Average</td>
-                <td>90</td>
-            </tr>
-        </tfoot> -->
-    </table>
+            </p>
+
+            <i class="fa fa-user" aria-hidden="true" style="font-size: 6em;"></i>
+            <br>
+            <font size="5">Jose Annunziato</font>
+            <p></p>
+            <p></p>
+            <font size="4">Contact</font>
+            <p class="">No registered services, you can add some on the settings page.</p>
+            <font size="4">Biography</font>
+            <p>Faculty, Software Engineer, AI, Space, and renewables enthusiast.</p>
+            <font size="4">Links</font>
+            <p class="wd-account-info"><a href="https://www.youtube.com/@WebDevTV">YouTube</a></p>
+        </div>
+    </div>
 </body>
+
+</html>
