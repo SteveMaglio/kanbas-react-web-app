@@ -32,10 +32,19 @@ body * {
   color: red;
 }
 
+.wd-kn .list-group-item.active .custom-icon-white{
+  background-color: white;
+  color: black;
+}
+
 /* Style for the icon inside each item */
 .custom-icon {
   color: red;
   font-size: 1.5em;
+}
+.custom-icon-white {
+  color: white;
+  font-size: 1.75em;
 }
 
 .wd-dashboard .list-group-item {
@@ -43,4 +52,50 @@ body * {
   margin-left: 36px;
   width: 325px;
   padding: 0px;
+}
+
+.wd-cn .list-group-item{
+  background-color: white;
+  color: red;
+  text-align: left;
+  padding: Opx;
+  width: 140px;
+  margin: Opx;
+  margin-left: 20px;
+  padding: 0px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wd-cn .list-group-item.active {
+  padding-left: 5px;
+  border-left: 1px solid black;
+  color: black;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.wd-course-module .list-group-item{
+  margin-top: 40px;
+  padding: 0;
+}
+.wd-course-module .list-group-item p{
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.wd-course-module-header {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: whitesmoke;
+}
+
+.wd-main-content {
+  width: 60%;
+}
+
+.wd-sidebar {
+  width: 15%;
 }

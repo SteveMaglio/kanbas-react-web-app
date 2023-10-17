@@ -1,6 +1,6 @@
 [
   {
-    "img" : "../../images/yellow.png",
+    "img": "../../images/color_yellow.png",
     "_id": "CS4550",
     "name": "Web Development",
     "number": "CS4550",
@@ -8,15 +8,7 @@
     "endDate": "2023-05-15"
   },
   {
-    "img" : "../../images/yellow.png",
-    "_id": "CS3200",
-    "name": "Database Design",
-    "number": "CS3200",
-    "startDate": "2023-01-10",
-    "endDate": "2023-05-15"
-  },
-  {
-    "img" : "../../images/yellow.png",
+    "img": "../../images/crypto.jpg",
     "_id": "FINA2730",
     "name": "Fintech and Financial Innovation",
     "number": "FINA2730",
@@ -24,7 +16,16 @@
     "endDate": "2023-05-15"
   },
   {
-    "img" : "../../images/yellow.png",
+    "img": "../../images/color_blue.jpg",
+    "_id": "CS3200",
+    "name": "Database Design",
+    "number": "CS3200",
+    "startDate": "2023-01-10",
+    "endDate": "2023-05-15"
+  },
+
+  {
+    "img": "../../images/spaceship.jpeg",
     "_id": "RS101",
     "name": "Rocket Propulsion",
     "number": "RS4550",
@@ -32,7 +33,7 @@
     "endDate": "2023-05-15"
   },
   {
-    "img" : "../../images/yellow.png",
+    "img": "../../images/color_red.png",
     "_id": "RS102",
     "name": "Aerodynamics",
     "number": "RS4560",
@@ -40,7 +41,7 @@
     "endDate": "2023-05-15"
   },
   {
-    "img" : "../../images/yellow.png",
+    "img": "../../images/space.jpg",
     "_id": "RS103",
     "name": "Spacecraft Design",
     "number": "RS4570",

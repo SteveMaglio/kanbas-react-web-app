@@ -13,9 +13,8 @@ function Dashboard() {
             to={`/Kanbas/Courses/${course._id}`}
             className="list-group-item"
           >
-            <img style={{width : "100%"}} src={course.img}></img>
+            <img id="ImgEmployee" style={{width : "100%"}} src={course.img} alt="MISSING GIF" />
             <br></br>
-
             {course.number} <br></br>
             <h5>{course.name}</h5>
             <div style={{ fontSize: ".8em" }}>

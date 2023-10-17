@@ -5,19 +5,33 @@ import {
   FaTachometerAlt,
   FaBook,
   FaCalendarAlt,
+  FaClock,
+  FaInbox,
+  FaQuestionCircle,
+  FaPhotoVideo,
+  FaArrowCircleRight,
+
+
 } from "react-icons/fa";
 function KanbasNavigation() {
-  const links = ["Account", "Dashboard", "Courses", "Calendar"];
+  const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help"];
   const icons = [
-    <FaRegUserCircle className="custom-icon" />,
+    <FaRegUserCircle className="custom-icon-white" />,
     <FaTachometerAlt className="custom-icon" />,
     <FaBook className="custom-icon" />,
     <FaCalendarAlt className="custom-icon" />,
+    <FaInbox className="custom-icon" />,
+    <FaClock className="custom-icon" />,
+    <FaPhotoVideo className="custom-icon" />,
+    <FaArrowCircleRight className="custom-icon" />,
+    <FaQuestionCircle className="custom-icon" />,
+    
+
   ];
   const { pathname } = useLocation();
   return (
     <div className="wd-kn list-group-flush">
-      <img style={{width : "100%"}} src={"../../images/nulogo.png"}></img>
+      <img style={{width : "100%"}} src={"../../images/nulogo.png"} alt="northeastern university logo"></img>
       {links.map((link, index) => (
         <Link
           style={{

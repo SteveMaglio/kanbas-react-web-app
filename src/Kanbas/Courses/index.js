@@ -10,19 +10,27 @@ function Courses() {
   const course = db.courses.find((course) => course._id === courseId);
   return (
     <div>
-      <h1>Course {course.name}</h1>
-      <CourseNavigation />
-      <div>
-        <div className="overflow-y-scroll position-fixed bottom-1 end-1">
+      <div className="row">
+        <h6>{course._id} | {course.name} {">"}</h6>
+      </div>
+      <div className="row">
+        <div className="col-md-auto">
+          <CourseNavigation />
+        </div>
+        <div className="col">
+          <div>
           <Routes>
-          <Route path="/" element={<Navigate to="Home" />} />
-            <Route path="Home" element={<Home/>} />
-            <Route path="Modules" element={<Modules/>} />
-            <Route path="Assignments" element={<Assignments/>} />
-            <Route path="Assignments/:assignmentId"
-                   element={<AssignmentEditor/>}/>
+            <Route path="/" element={<Navigate to="Home" />} />
+            <Route path="Home" element={<Home />} />
+            <Route path="Modules" element={<Modules />} />
+            <Route path="Assignments" element={<Assignments />} />
+            <Route
+              path="Assignments/:assignmentId"
+              element={<AssignmentEditor />}
+            />
             <Route path="Grades" element={<h1>Grades</h1>} />
           </Routes>
+          </div>
         </div>
       </div>
     </div>
