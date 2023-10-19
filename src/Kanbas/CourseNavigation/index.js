@@ -28,7 +28,6 @@ function CourseNavigation() {
   const { pathname } = useLocation();
   return (
     <div className="wd-cn list-group-flush" style={{ width: 150 }}>
-      erm
       {links.map((link, index) => (
         <Link
           key={index}
