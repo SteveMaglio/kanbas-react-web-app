@@ -25,7 +25,7 @@ function Courses() {
         </h6>
         <button
           id="btnFA"
-          className="btn  btn-light float-end"
+          className="btn btn-light float-end"
           style={{ width: "180px", marginTop: "10px"}}
           type="button"
         >
