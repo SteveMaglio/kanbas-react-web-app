@@ -1,7 +1,7 @@
 import ModuleList from "./ModuleList";
 function Modules() {
   return (
-    <div>
+    <div className="row">
       <ModuleList/>
     </div>
   );

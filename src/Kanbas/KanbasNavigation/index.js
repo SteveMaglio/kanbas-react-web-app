@@ -1,4 +1,4 @@
-import "../../Kanbas/style.css";
+import "../../Kanbas/Kanbas.css";
 import { Link, useLocation } from "react-router-dom";
 import {
   FaRegUserCircle,
@@ -10,9 +10,9 @@ import {
   FaQuestionCircle,
   FaPhotoVideo,
   FaArrowCircleRight,
-
-
 } from "react-icons/fa";
+
+
 function KanbasNavigation() {
   const links = ["Account", "Dashboard", "Courses", "Calendar", "Inbox", "History", "Studio", "Commons", "Help"];
   const icons = [

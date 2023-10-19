@@ -7,17 +7,16 @@ body * {
   font-family: Arial, Helvetica, sans-serif
 }
 
-/* Style for the sidebar container */
+/* KANBAS NAVIGATION */
 .wd-kn {
   background-color: black;
   width: 85px;
-  /* Set the width of the sidebar */
+
   font-size: .8em;
   text-align: center;
   height: 100vh;
 }
 
-/* Style for each item in the sidebar */
 .wd-kn .list-group-item {
   background-color: black;
   color: white;
@@ -26,27 +25,29 @@ body * {
   border: 0;
 }
 
-/* Style for the active item */
+
 .wd-kn .list-group-item.active {
   background-color: white;
   color: red;
 }
 
-.wd-kn .list-group-item.active .custom-icon-white{
+.wd-kn .list-group-item.active .custom-icon-white {
   background-color: white;
   color: black;
 }
 
-/* Style for the icon inside each item */
 .custom-icon {
   color: red;
   font-size: 1.5em;
 }
+
 .custom-icon-white {
   color: white;
   font-size: 1.75em;
 }
 
+
+/* COURSE CARDS ON DASHBOARD */
 .wd-dashboard .list-group-item {
   margin-top: 36px;
   margin-left: 36px;
@@ -54,7 +55,9 @@ body * {
   padding: 0px;
 }
 
-.wd-cn .list-group-item{
+
+/* COURSE NAVIGATION */
+.wd-cn .list-group-item {
   background-color: white;
   color: red;
   text-align: left;
@@ -67,6 +70,24 @@ body * {
   margin-bottom: 10px;
 }
 
+.wd-breadcrumb {
+  color: black;
+  padding-top: 10px;
+  display: inline-block;
+}
+
+.link a {
+  color: red;
+  text-decoration: none;
+}
+
+.wd-breadcrumb-icon {
+  color: red;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
 .wd-cn .list-group-item.active {
   padding-left: 5px;
   border-left: 1px solid black;
@@ -75,21 +96,31 @@ body * {
   margin-top: 10px;
 }
 
-.wd-course-module .list-group-item{
+/* MODULES PAGE */
+.wd-course-module .list-group-item {
   margin-top: 40px;
   padding: 0;
 }
-.wd-course-module .list-group-item p{
+
+.wd-course-module .list-group-item p {
   padding-left: 20px;
   margin-bottom: 10px;
 }
 
-.wd-course-module-header {
+.wd-module-content {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: whitesmoke;
+  background-color: lightgray;
+}
+
+.wd-module-buttons button {
+  margin-left: 10px
+}
+
+.wd-module-buttons .form-select {
+  margin-left: 10px
 }
 
 .wd-main-content {
@@ -98,4 +129,36 @@ body * {
 
 .wd-sidebar {
   width: 15%;
+}
+
+/* SIDEBAR */
+.wd-home-status-button p {
+  text-align: left;
+  margin: 0px;
+}
+
+
+/* ASSIGNMENTS */
+.wd-assignment .list-group-item {
+  border: solid;
+  border-color: lightgray;
+  text-align: left;
+  text-decoration: none;
+  margin: 0px;
+  padding: 10px;
+  color: black;
+}
+
+.wd-assignment .list-group-item .custom-icon {
+  color: green;
+  margin-right: 10px;
+}
+
+.wd-module-content .green-list {
+  border-left-color: green;
+  border-left-width: 2px;
+}
+
+.wd-assignment {
+  padding-left: 0px;
 }

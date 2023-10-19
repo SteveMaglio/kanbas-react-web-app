@@ -7,5 +7,14 @@
   { "_id": "A203", "title": "Heating Analysis", "course": "RS102" },
   { "_id": "A301", "title": "Structural Design Task", "course": "RS103" },
   { "_id": "A302", "title": "Orbital Calculations", "course": "RS103" },
-  { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" }
+  { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" },
+  { "_id": "A401", "title": "HTML Basics", "course": "CS4550" },
+  { "_id": "A402", "title": "JavaScript Fundamentals", "course": "CS4550" },
+  { "_id": "A403", "title": "React Project", "course": "CS4550" },
+  { "_id": "A501", "title": "SQL Queries", "course": "CS3200" },
+  { "_id": "A502", "title": "Relational Algebra Exercises", "course": "CS3200" },
+  { "_id": "A503", "title": "Docker Deployment Assignment", "course": "CS3200" },
+  { "_id": "A601", "title": "Financial Ratios Analysis", "course": "FINA2730" },
+  { "_id": "A602", "title": "Portfolio Management Project", "course": "FINA2730" },
+  { "_id": "A603", "title": "Risk Assessment Essay", "course": "FINA2730" }
 ]

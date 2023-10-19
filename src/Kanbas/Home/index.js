@@ -1,14 +1,14 @@
 import ModuleList from "../Courses/Modules/ModuleList";
+import Sidebar from "../Courses/Modules/Sidebar";
 
 function Home() {
   return (
-    <div className="row"  style={{ minWidth: "208%" }}>
+    <div className="row">
       <div className="col">
-        <h2>Home</h2>
         <ModuleList />
       </div>
-      <div className="col" style={{ maxWidth: "15%", textAlign: "center"}}>
-        <h2>Status</h2>
+      <div className="col" style={{minWidth : "18%", maxWidth: "18%", textAlign: "left"}}>
+        <Sidebar />
       </div>
     </div>
   );
