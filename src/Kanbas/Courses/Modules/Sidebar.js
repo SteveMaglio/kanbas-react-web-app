@@ -1,6 +1,4 @@
 import React from "react";
-import { useParams } from "react-router-dom";
-import db from "../../Database";
 import {
     FaFileImport,
     FaArrowUp,
@@ -11,8 +9,6 @@ import {
   } from "react-icons/fa";
 
 function Sidebar() {
-  const { courseId } = useParams();
-  const modules = db.modules;
   return (
     <div>
       <button id="btnFA" class="btn  btn-light">

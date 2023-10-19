@@ -5,6 +5,7 @@ import Modules from "../Courses/Modules";
 import Home from "../Home";
 import Assignments from "../Assignments";
 import AssignmentEditor from "../Assignments/AssignmentEditor";
+import "../../Kanbas/Kanbas.css";
 import { FaBars, FaGlasses } from "react-icons/fa";
 
 function Courses() {
