@@ -8,9 +8,9 @@ import AssignmentEditor from "../Assignments/AssignmentEditor";
 import "../../Kanbas/Kanbas.css";
 import { FaBars, FaGlasses } from "react-icons/fa";
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
   const thePath = window.location.href;
 
   return (

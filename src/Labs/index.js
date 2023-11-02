@@ -11,7 +11,7 @@ import {Routes, Route, Navigate}
 function Labs() {
   return (
     <Provider store={store}>
-      <div className="container">
+      <div>
      <Nav/>
      <Routes>
        <Route path="/"

@@ -1,228 +1,228 @@
 [
   {
-    "_id": "M101",
+    "_id": "M101a",
     "name": "Introduction to Rocket Propulsion",
     "description": "Basic principles of rocket propulsion and rocket engines.",
     "course": "RS101"
   },
   {
-    "_id": "M102",
+    "_id": "M102b",
     "name": "Fuel and Combustion",
     "description": "Understanding rocket fuel, combustion processes, and efficiency.",
     "course": "RS101"
   },
   {
-    "_id": "M103",
+    "_id": "M103v",
     "name": "Nozzle Design",
     "description": "Principles of rocket nozzle design and performance optimization.",
     "course": "RS101"
   },
   {
-    "_id": "M201",
+    "_id": "M201a",
     "name": "Fundamentals of Aerodynamics",
     "description": "Basic aerodynamic concepts and fluid dynamics principles.",
     "course": "RS102"
   },
   {
-    "_id": "M202",
+    "_id": "M202b",
     "name": "Subsonic and Supersonic Flow",
     "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
     "course": "RS102"
   },
   {
-    "_id": "M203",
+    "_id": "M203c",
     "name": "Aerodynamic Heating",
     "description": "Study of aerodynamic heating and thermal protection systems.",
     "course": "RS102"
   },
   {
-    "_id": "M301",
+    "_id": "M301a",
     "name": "Spacecraft Structural Design",
     "description": "Fundamentals of designing spacecraft structures and materials selection.",
     "course": "RS103"
   },
   {
-    "_id": "M302",
+    "_id": "M302b",
     "name": "Orbital Mechanics",
     "description": "Understanding orbital dynamics and mission planning.",
     "course": "RS103"
   },
   {
-    "_id": "M303",
+    "_id": "M303c",
     "name": "Spacecraft Systems Engineering",
     "description": "Overview of spacecraft systems and subsystems engineering.",
     "course": "RS103"
   },
   {
-    "_id": "CS101",
+    "_id": "CS101a",
     "course": "CS4550",
     "name": "Introduction to Web Development",
     "description": "Basic principles and concepts of web development."
   },
   {
-    "_id": "CS101",
+    "_id": "CS101b",
     "course": "CS4550",
     "name": "HTML and CSS Fundamentals",
     "description": "Understanding the fundamentals of HTML and CSS for web design."
   },
   {
-    "_id": "CS101",
+    "_id": "CS101c",
     "course": "CS4550",
     "name": "JavaScript Programming",
     "description": "Introduction to JavaScript and its role in web development."
   },
   {
-    "_id": "CS101",
+    "_id": "CS101d",
     "course": "CS4550",
     "name": "Front-End Development",
     "description": "Creating user interfaces and interactive web applications."
   },
   {
-    "_id": "CS101",
+    "_id": "CS101e",
     "course": "CS4550",
     "name": "Back-End Development",
     "description": "Server-side scripting, databases, and server technologies."
   },
   {
-    "_id": "CS101",
+    "_id": "CS101f",
     "course": "CS4550",
     "name": "Responsive Design and Mobile Development",
     "description": "Adapting web applications for different screen sizes and devices."
   },
   {
-    "_id": "CS101",
+    "_id": "CS101g",
     "course": "CS4550",
     "name": "Web Security and Authentication",
     "description": "Principles of web security and user authentication."
   },
   {
-    "_id": "CS101",
+    "_id": "CS101h",
     "course": "CS4550",
     "name": "APIs and Web Services",
     "description": "Building and consuming APIs for web applications."
   },
   {
-    "_id": "CS101",
+    "_id": "CS101i",
     "course": "CS4550",
     "name": "Version Control and Deployment",
     "description": "Managing code with version control systems and deploying web apps."
   },
   {
-    "_id": "CS101",
+    "_id": "CS101j",
     "course": "CS4550",
     "name": "Web Development Trends and Future Directions",
     "description": "Exploring emerging trends and technologies in web development."
   },
   {
-    "_id": "FINA101",
+    "_id": "FINA101a",
     "course": "FINA2730",
     "name": "Introduction to Fintech and Finance",
     "description": "Overview of the fintech industry and financial markets."
   },
   {
-    "_id": "FINA101",
+    "_id": "FINA101b",
     "course": "FINA2730",
     "name": "Cryptocurrency and Blockchain Technology",
     "description": "Understanding cryptocurrencies and blockchain technology."
   },
   {
-    "_id": "FINA101",
+    "_id": "FINA101c",
     "course": "FINA2730",
     "name": "Investment Strategies",
     "description": "Techniques for effective investment in financial markets."
   },
   {
-    "_id": "FINA101",
+    "_id": "FINA101d",
     "course": "FINA2730",
     "name": "Risk Management and Financial Derivatives",
     "description": "Managing financial risks and derivatives in finance."
   },
   {
-    "_id": "FINA101",
+    "_id": "FINA101e",
     "course": "FINA2730",
     "name": "Payment Systems and Digital Wallets",
     "description": "Exploring payment systems and digital wallet technologies."
   },
   {
-    "_id": "FINA101",
+    "_id": "FINA101f",
     "course": "FINA2730",
     "name": "Regulatory Compliance in Fintech",
     "description": "Complying with regulations and laws in the fintech industry."
   },
   {
-    "_id": "FINA101",
+    "_id": "FINA101g",
     "course": "FINA2730",
     "name": "Algorithmic Trading",
     "description": "Developing algorithms for automated trading strategies."
   },
   {
-    "_id": "FINA101",
+    "_id": "FINA101h",
     "course": "FINA2730",
     "name": "Crowdfunding and Peer-to-Peer Lending",
     "description": "Understanding crowdfunding and P2P lending platforms."
   },
   {
-    "_id": "FINA101",
+    "_id": "FINA101i",
     "course": "FINA2730",
     "name": "Financial Data Analysis and Visualization",
     "description": "Analyzing financial data and creating visualizations."
   },
   {
-    "_id": "FINA101",
+    "_id": "FINA10j1",
     "course": "FINA2730",
     "name": "Future Trends in Fintech and Financial Markets",
     "description": "Examining upcoming trends and innovations in fintech and finance."
   },
   {
-    "_id": "CS102",
+    "_id": "CS102a",
     "course": "CS3200",
     "name": "Introduction to Databases and SQL",
     "description": "Basics of databases, SQL, and their importance in computing."
   },
   {
-    "_id": "CS102",
+    "_id": "CS102b",
     "course": "CS3200",
     "name": "Database Design Principles",
     "description": "Designing efficient and normalized databases."
   },
   {
-    "_id": "CS102",
+    "_id": "CS102c",
     "course": "CS3200",
     "name": "SQL Querying and Data Manipulation",
     "description": "Writing SQL queries for data retrieval and modification."
   },
   {
-    "_id": "CS102",
+    "_id": "CS102d",
     "course": "CS3200",
     "name": "Database Management Systems (DBMS)",
     "description": "Exploring different DBMS and their features."
   },
   {
-    "_id": "CS102",
+    "_id": "CS102e",
     "course": "CS3200",
     "name": "Relational Diagrams and Entity-Relationship Modeling",
     "description": "Creating entity-relationship diagrams for database design."
   },
   {
-    "_id": "CS102",
+    "_id": "CS102f",
     "course": "CS3200",
     "name": "Database Normalization and Optimization",
     "description": "Normalizing databases and optimizing their performance."
   },
   {
-    "_id": "CS102",
+    "_id": "CS102g",
     "course": "CS3200",
     "name": "Indexing and Query Optimization",
     "description": "Improving query performance through indexing."
   },
   {
-    "_id": "CS102",
+    "_id": "CS102h",
     "course": "CS3200",
     "name": "Transactions and Concurrency Control",
     "description": "Managing transactions and ensuring data consistency."
   },
   {
-    "_id": "CS102",
+    "_id": "CS102i",
     "course": "CS3200",
     "name": "NoSQL Databases and Alternative Data Models",
     "description": "Introduction to NoSQL databases and non-relational data models."
