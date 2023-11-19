@@ -12,6 +12,9 @@ import ObjectStateVariable from "./ObjectStateVariable";
 import ArrayStateVariable from "./ArrayStateVariable";
 import ParentStateComponent from "./ParentStateComponent";
 
+const handleClick = (parameter = "Hello") => {
+  console.log(parameter);
+};
 
 function Assignment4() {
   function sayHello() {
