@@ -1,17 +1,46 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import db from "../../Database";
 import { FaEllipsisV } from "react-icons/fa";
+import * as client from "./client";
 import { useSelector, useDispatch } from "react-redux";
 import {
   addModule,
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
+import { findModulesForCourse, createModule } from "./client";
 
 function ModuleList() {
+
   const { courseId } = useParams();
+
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
+
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+  const handleUpdateModule = async () => {
+    const status = await client.updateModule(module);
+    dispatch(updateModule(module));
+  };
+
+
+
+  useEffect(() => {
+    findModulesForCourse(courseId).then((modules) =>
+      dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
@@ -71,14 +100,11 @@ function ModuleList() {
         <div className="col">
           <button
             className="btn btn-light"
-            onClick={() => dispatch(updateModule(module))}
+            onClick={() => handleUpdateModule(module)}
           >
             Update
           </button>
-          <button
-            className="btn btn-success"
-            onClick={() => dispatch(addModule({ ...module, course: courseId }))}
-          >
+          <button className="btn btn-success" onClick={handleAddModule}>
             Add
           </button>
         </div>
@@ -90,23 +116,23 @@ function ModuleList() {
             <div>
               <li key={index} className="list-group-item">
                 <div className="wd-module-content">
-                <h5>{module.name}</h5>
-                <div style={{ paddingRight: 20 }}>
-                  <button
-                    className="btn btn-light"
-                    onClick={() => dispatch(setModule(module))}
-                  >
-                    Edit
-                  </button>
+                  <h5>{module.name}</h5>
+                  <div style={{ paddingRight: 20 }}>
+                    <button
+                      className="btn btn-light"
+                      onClick={() => dispatch(setModule(module))}
+                    >
+                      Edit
+                    </button>
 
-                  <button
-                    style={{ marginLeft: 10 }}
-                    className="btn btn-danger"
-                    onClick={() => dispatch(deleteModule(module._id))}
-                  >
-                    Delete
-                  </button>
-                </div>
+                    <button
+                      style={{ marginLeft: 10 }}
+                      className="btn btn-danger"
+                      onClick={() => handleDeleteModule(module._id)}
+                    >
+                      Delete
+                    </button>
+                  </div>
                 </div>
                 <p>{module.description}</p>
               </li>
