@@ -111,14 +111,11 @@ function UserTable() {
               <td>{user.firstName}</td>
               <td>{user.lastName}</td>
               <td className="text-nowrap">
-                <button className="btn btn-danger me-2">
-                  <BsTrash3Fill onClick={() => deleteUser(user)} />
-                </button>
                 <button className="btn btn-warning me-2">
                   <BsPencil onClick={() => selectUser(user)} />
                 </button>
-                <button onClick={() => deleteUser(user)}>
-                  <BsTrash3Fill />
+                <button className="btn btn-danger me-2">
+                  <BsTrash3Fill onClick={() => deleteUser(user)} />
                 </button>
               </td>
             </tr>
