@@ -1,9 +1,15 @@
 import * as client from "./client";
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 function Account() {
+  const { id } = useParams();
   const [account, setAccount] = useState(null);
+  const findUserById = async (id) => {
+    const user = await client.findUserById(id);
+    setAccount(user);
+  };
+
   const navigate = useNavigate();
   const fetchAccount = async () => {
     const account = await client.account();
@@ -14,10 +20,20 @@ function Account() {
     await client.updateUser(account);
   };
 
+  const signout = async () => {
+    await client.signout();
+    navigate("/project/signin");
+  };
+
   
   useEffect(() => {
-    fetchAccount();
+    if (id) {
+      findUserById(id);
+    } else {
+      fetchAccount();
+    }
   }, []);
+
   return (
     <div className="w-50">
       <h1>Account</h1>
@@ -58,6 +74,9 @@ function Account() {
             <option value="STUDENT">Student</option>
           </select>
           <button onClick={save}>Save</button>
+          <button onClick={signout}>
+    Signout
+  </button>
         </div>
       )}
     </div>
