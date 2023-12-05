@@ -19,7 +19,13 @@ function Nav() {
         to="/project/signin"
         className="list-group-item list-group-item-action"
       >
-        SignIn
+        Sign In
+      </Link>
+      <Link
+        to="/project/signup"
+        className="list-group-item list-group-item-action"
+      >
+        Sign Up
       </Link>
       <Link
         to="/project/users"
